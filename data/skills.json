@@ -1,0 +1,202 @@
+[
+  {
+    "id": "skill_java",
+    "name": "Java",
+    "category": "language"
+  },
+  {
+    "id": "skill_python",
+    "name": "Python",
+    "category": "language"
+  },
+  {
+    "id": "skill_javascript",
+    "name": "JavaScript",
+    "category": "language"
+  },
+  {
+    "id": "skill_typescript",
+    "name": "TypeScript",
+    "category": "language"
+  },
+  {
+    "id": "skill_sql",
+    "name": "SQL",
+    "category": "language"
+  },
+  {
+    "id": "skill_spring_boot",
+    "name": "Spring Boot",
+    "category": "framework"
+  },
+  {
+    "id": "skill_react",
+    "name": "React",
+    "category": "framework"
+  },
+  {
+    "id": "skill_fastapi",
+    "name": "FastAPI",
+    "category": "framework"
+  },
+  {
+    "id": "skill_django",
+    "name": "Django",
+    "category": "framework"
+  },
+  {
+    "id": "skill_node",
+    "name": "Node.js",
+    "category": "framework"
+  },
+  {
+    "id": "skill_kafka",
+    "name": "Kafka",
+    "category": "messaging"
+  },
+  {
+    "id": "skill_rabbitmq",
+    "name": "RabbitMQ",
+    "category": "messaging"
+  },
+  {
+    "id": "skill_rest_api",
+    "name": "REST API Design",
+    "category": "backend"
+  },
+  {
+    "id": "skill_graphql",
+    "name": "GraphQL",
+    "category": "backend"
+  },
+  {
+    "id": "skill_microservices",
+    "name": "Microservices",
+    "category": "architecture"
+  },
+  {
+    "id": "skill_postgres",
+    "name": "PostgreSQL",
+    "category": "database"
+  },
+  {
+    "id": "skill_mongodb",
+    "name": "MongoDB",
+    "category": "database"
+  },
+  {
+    "id": "skill_redis",
+    "name": "Redis",
+    "category": "database"
+  },
+  {
+    "id": "skill_neo4j",
+    "name": "Graph Databases",
+    "category": "database"
+  },
+  {
+    "id": "skill_aws",
+    "name": "AWS",
+    "category": "cloud"
+  },
+  {
+    "id": "skill_azure",
+    "name": "Azure",
+    "category": "cloud"
+  },
+  {
+    "id": "skill_docker",
+    "name": "Docker",
+    "category": "devops"
+  },
+  {
+    "id": "skill_kubernetes",
+    "name": "Kubernetes",
+    "category": "devops"
+  },
+  {
+    "id": "skill_cicd",
+    "name": "CI/CD",
+    "category": "devops"
+  },
+  {
+    "id": "skill_terraform",
+    "name": "Terraform",
+    "category": "devops"
+  },
+  {
+    "id": "skill_git",
+    "name": "Git",
+    "category": "tooling"
+  },
+  {
+    "id": "skill_testing",
+    "name": "Automated Testing",
+    "category": "engineering"
+  },
+  {
+    "id": "skill_junit",
+    "name": "JUnit",
+    "category": "engineering"
+  },
+  {
+    "id": "skill_selenium",
+    "name": "Selenium",
+    "category": "engineering"
+  },
+  {
+    "id": "skill_code_review",
+    "name": "Code Review",
+    "category": "engineering"
+  },
+  {
+    "id": "skill_payments",
+    "name": "Payments Systems",
+    "category": "domain"
+  },
+  {
+    "id": "skill_banking_compliance",
+    "name": "Banking Compliance",
+    "category": "domain"
+  },
+  {
+    "id": "skill_pci_dss",
+    "name": "PCI-DSS",
+    "category": "domain"
+  },
+  {
+    "id": "skill_healthcare_hl7",
+    "name": "Healthcare HL7/FHIR",
+    "category": "domain"
+  },
+  {
+    "id": "skill_retail_ecom",
+    "name": "Retail E-commerce",
+    "category": "domain"
+  },
+  {
+    "id": "skill_telecom_oss",
+    "name": "Telecom OSS/BSS",
+    "category": "domain"
+  },
+  {
+    "id": "skill_agile",
+    "name": "Agile/Scrum",
+    "category": "soft"
+  },
+  {
+    "id": "skill_client_comm",
+    "name": "Client Communication",
+    "category": "soft"
+  },
+  {
+    "id": "skill_documentation",
+    "name": "Technical Documentation",
+    "category": "soft"
+  },
+  {
+    "id": "skill_mentoring",
+    "name": "Mentoring",
+    "category": "soft"
+  }
+]
