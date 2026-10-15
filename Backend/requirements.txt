@@ -1,0 +1,23 @@
+# API
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Config and models
+pydantic
+pydantic-settings
+python-dotenv
+
+# Databases
+falkordb
+qdrant-client
+
+# LLM (Groq is OpenAI-compatible)
+openai
+
+# Embeddings
+sentence-transformers
+
+# Ingestion
+python-frontmatter
+tiktoken

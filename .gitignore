@@ -6,7 +6,9 @@
 # Python
 __pycache__/
 *.py[cod]
+.venv
 .venv/
+venv
 venv/
 .pytest_cache/
 .mypy_cache/
@@ -28,6 +30,8 @@ qdrant_data/
 .idea/
 .DS_Store
 Thumbs.db
+pyrefly.toml
+**/pyrefly.toml
 
 # Logs
 *.log
