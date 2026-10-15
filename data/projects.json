@@ -1,0 +1,182 @@
+[
+  {
+    "id": "proj_001",
+    "name": "Secure Digital Banking API",
+    "client_id": "client_001",
+    "status": "active",
+    "start_date": "2026-01-15",
+    "team_id": "team_001",
+    "requires_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_fastapi",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_postgres",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_rest_api",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_banking_compliance",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": "proj_002",
+    "name": "Real-Time Fraud Detection System",
+    "client_id": "client_001",
+    "status": "planning",
+    "start_date": "2026-03-10",
+    "team_id": "team_002",
+    "requires_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_sql",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_kafka",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_payments",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_testing",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": "proj_003",
+    "name": "E-Commerce Platform Modernization",
+    "client_id": "client_002",
+    "status": "active",
+    "start_date": "2025-11-20",
+    "team_id": "team_003",
+    "requires_skills": [
+      {
+        "skill_id": "skill_javascript",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_react",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_node",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_mongodb",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_retail_ecom",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": "proj_004",
+    "name": "Intelligent Product Recommendation Engine",
+    "client_id": "client_002",
+    "status": "planning",
+    "start_date": "2026-05-05",
+    "team_id": "team_002",
+    "requires_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_sql",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_mongodb",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_retail_ecom",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_aws",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": "proj_005",
+    "name": "Patient Management and Appointment System",
+    "client_id": "client_003",
+    "status": "active",
+    "start_date": "2026-02-01",
+    "team_id": "team_001",
+    "requires_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_fastapi",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_postgres",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_rest_api",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_healthcare_hl7",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": "proj_006",
+    "name": "Telecom Network Monitoring and Incident Analytics",
+    "client_id": "client_004",
+    "status": "planning",
+    "start_date": "2026-06-15",
+    "team_id": "team_004",
+    "requires_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_kafka",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_sql",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_aws",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_telecom_oss",
+        "level": 4
+      }
+    ]
+  }
+]

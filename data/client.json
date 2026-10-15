@@ -1,0 +1,78 @@
+[
+  {
+    "id": "client_001",
+    "name": "Apex National Bank",
+    "industry": "banking",
+    "needs": [
+      "Secure banking APIs",
+      "Fraud detection",
+      "Customer authentication",
+      "Automated financial reporting"
+    ],
+    "tech_preferences": [
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "Kafka",
+      "Docker"
+    ],
+    "contact_person": "Priya Sharma"
+  },
+  {
+    "id": "client_002",
+    "name": "UrbanCart Retail",
+    "industry": "retail",
+    "needs": [
+      "Online shopping platform",
+      "Product recommendations",
+      "Inventory tracking",
+      "Customer behavior analytics"
+    ],
+    "tech_preferences": [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "SQL"
+    ],
+    "contact_person": "Rahul Mehta"
+  },
+  {
+    "id": "client_003",
+    "name": "MediCore Health Systems",
+    "industry": "healthcare",
+    "needs": [
+      "Patient management system",
+      "Appointment scheduling",
+      "Medical data analysis",
+      "Healthcare support chatbot"
+    ],
+    "tech_preferences": [
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "Docker",
+      "REST API Design"
+    ],
+    "contact_person": "Ananya Rao"
+  },
+  {
+    "id": "client_004",
+    "name": "NovaConnect Telecom",
+    "industry": "telecom",
+    "needs": [
+      "Network performance monitoring",
+      "Predict network failures",
+      "Customer support analysis",
+      "Automated incident reporting"
+    ],
+    "tech_preferences": [
+      "Python",
+      "Kafka",
+      "SQL",
+      "AWS",
+      "Microservices"
+    ],
+    "contact_person": "Vikram Desai"
+  }
+]

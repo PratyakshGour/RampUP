@@ -1,0 +1,1307 @@
+[
+  {
+    "id": "task_001",
+    "title": "Document Banking API Endpoints",
+    "description": "Create clear documentation for the existing banking API endpoints and their request parameters.",
+    "project_id": "proj_001",
+    "needs_skills": [
+      {
+        "skill_id": "skill_documentation",
+        "level": 2
+      },
+      {
+        "skill_id": "skill_rest_api",
+        "level": 2
+      }
+    ],
+    "difficulty": 1,
+    "est_hours": 3,
+    "status": "open",
+    "blocked_by": []
+  },
+  {
+    "id": "task_002",
+    "title": "Fix API Validation Error",
+    "description": "Fix incorrect validation messages returned when a banking API receives missing input fields.",
+    "project_id": "proj_001",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 2
+      },
+      {
+        "skill_id": "skill_fastapi",
+        "level": 2
+      }
+    ],
+    "difficulty": 2,
+    "est_hours": 4,
+    "status": "open",
+    "blocked_by": []
+  },
+  {
+    "id": "task_003",
+    "title": "Write API Unit Tests",
+    "description": "Create unit tests for successful banking API requests and common validation failures.",
+    "project_id": "proj_001",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_testing",
+        "level": 2
+      }
+    ],
+    "difficulty": 2,
+    "est_hours": 5,
+    "status": "open",
+    "blocked_by": []
+  },
+  {
+    "id": "task_004",
+    "title": "Review Banking API Documentation",
+    "description": "Check the API documentation for missing endpoints, incorrect examples, and unclear instructions.",
+    "project_id": "proj_001",
+    "needs_skills": [
+      {
+        "skill_id": "skill_documentation",
+        "level": 2
+      }
+    ],
+    "difficulty": 1,
+    "est_hours": 2,
+    "status": "done",
+    "blocked_by": []
+  },
+  {
+    "id": "task_005",
+    "title": "Implement Authentication Middleware",
+    "description": "Add middleware that validates authentication tokens before allowing access to protected banking endpoints.",
+    "project_id": "proj_001",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_fastapi",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_rest_api",
+        "level": 4
+      }
+    ],
+    "difficulty": 4,
+    "est_hours": 12,
+    "status": "in_progress",
+    "blocked_by": []
+  },
+  {
+    "id": "task_006",
+    "title": "Design Banking Database Schema",
+    "description": "Design PostgreSQL tables for customer accounts, transactions, and authentication records.",
+    "project_id": "proj_001",
+    "needs_skills": [
+      {
+        "skill_id": "skill_postgres",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_banking_compliance",
+        "level": 3
+      }
+    ],
+    "difficulty": 4,
+    "est_hours": 10,
+    "status": "open",
+    "blocked_by": []
+  },
+  {
+    "id": "task_007",
+    "title": "Optimize Transaction Queries",
+    "description": "Improve PostgreSQL query performance for retrieving customer transaction histories.",
+    "project_id": "proj_001",
+    "needs_skills": [
+      {
+        "skill_id": "skill_postgres",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_sql",
+        "level": 4
+      }
+    ],
+    "difficulty": 3,
+    "est_hours": 8,
+    "status": "open",
+    "blocked_by": [
+      "task_006"
+    ]
+  },
+  {
+    "id": "task_008",
+    "title": "Add API Rate Limiting",
+    "description": "Limit repeated requests to sensitive banking endpoints to reduce abuse and protect service availability.",
+    "project_id": "proj_001",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_redis",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_rest_api",
+        "level": 4
+      }
+    ],
+    "difficulty": 4,
+    "est_hours": 9,
+    "status": "open",
+    "blocked_by": []
+  },
+  {
+    "id": "task_009",
+    "title": "Audit Banking API Permissions",
+    "description": "Review access permissions to ensure customers can only retrieve their own banking information.",
+    "project_id": "proj_001",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_banking_compliance",
+        "level": 4
+      }
+    ],
+    "difficulty": 4,
+    "est_hours": 10,
+    "status": "in_progress",
+    "blocked_by": []
+  },
+  {
+    "id": "task_010",
+    "title": "Prepare API Integration Tests",
+    "description": "Test complete banking API workflows using a test database and sample customer accounts.",
+    "project_id": "proj_001",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_testing",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_postgres",
+        "level": 3
+      }
+    ],
+    "difficulty": 3,
+    "est_hours": 6,
+    "status": "open",
+    "blocked_by": [
+      "task_003"
+    ]
+  },
+  {
+    "id": "task_011",
+    "title": "Document Fraud Detection Workflow",
+    "description": "Document how transaction data moves through the fraud detection pipeline and how alerts are generated.",
+    "project_id": "proj_002",
+    "needs_skills": [
+      {
+        "skill_id": "skill_documentation",
+        "level": 2
+      },
+      {
+        "skill_id": "skill_python",
+        "level": 2
+      }
+    ],
+    "difficulty": 1,
+    "est_hours": 3,
+    "status": "open",
+    "blocked_by": []
+  },
+  {
+    "id": "task_012",
+    "title": "Clean Transaction Training Data",
+    "description": "Remove duplicate records and handle missing values in the sample transaction dataset used for fraud detection.",
+    "project_id": "proj_002",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_sql",
+        "level": 2
+      }
+    ],
+    "difficulty": 2,
+    "est_hours": 5,
+    "status": "in_progress",
+    "blocked_by": []
+  },
+  {
+    "id": "task_013",
+    "title": "Create Fraud Detection Test Cases",
+    "description": "Prepare test cases for normal transactions, suspicious payment patterns, and invalid transaction records.",
+    "project_id": "proj_002",
+    "needs_skills": [
+      {
+        "skill_id": "skill_testing",
+        "level": 2
+      },
+      {
+        "skill_id": "skill_python",
+        "level": 3
+      }
+    ],
+    "difficulty": 2,
+    "est_hours": 4,
+    "status": "open",
+    "blocked_by": []
+  },
+  {
+    "id": "task_014",
+    "title": "Build Transaction Event Consumer",
+    "description": "Implement a Kafka consumer that reads transaction events for downstream fraud analysis.",
+    "project_id": "proj_002",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_kafka",
+        "level": 4
+      }
+    ],
+    "difficulty": 4,
+    "est_hours": 12,
+    "status": "open",
+    "blocked_by": []
+  },
+  {
+    "id": "task_015",
+    "title": "Develop Fraud Scoring Model",
+    "description": "Build a model that assigns risk scores to transactions using historical transaction features.",
+    "project_id": "proj_002",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_sql",
+        "level": 4
+      }
+    ],
+    "difficulty": 5,
+    "est_hours": 20,
+    "status": "in_progress",
+    "blocked_by": [
+      "task_012"
+    ]
+  },
+  {
+    "id": "task_016",
+    "title": "Store Fraud Detection Results",
+    "description": "Save transaction risk scores and investigation statuses in a structured database table.",
+    "project_id": "proj_002",
+    "needs_skills": [
+      {
+        "skill_id": "skill_sql",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_python",
+        "level": 3
+      }
+    ],
+    "difficulty": 3,
+    "est_hours": 7,
+    "status": "open",
+    "blocked_by": [
+      "task_015"
+    ]
+  },
+  {
+    "id": "task_017",
+    "title": "Configure Fraud Alert Pipeline",
+    "description": "Connect high-risk transaction scores to an alert pipeline for review by fraud analysts.",
+    "project_id": "proj_002",
+    "needs_skills": [
+      {
+        "skill_id": "skill_kafka",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      }
+    ],
+    "difficulty": 4,
+    "est_hours": 10,
+    "status": "open",
+    "blocked_by": [
+      "task_014",
+      "task_015"
+    ]
+  },
+  {
+    "id": "task_018",
+    "title": "Measure Fraud Model Accuracy",
+    "description": "Evaluate the fraud model using labeled test data and record its precision and recall.",
+    "project_id": "proj_002",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_testing",
+        "level": 3
+      }
+    ],
+    "difficulty": 3,
+    "est_hours": 8,
+    "status": "open",
+    "blocked_by": [
+      "task_015"
+    ]
+  },
+  {
+    "id": "task_019",
+    "title": "Add Fraud Model Regression Tests",
+    "description": "Create automated tests that detect unexpected changes in fraud model predictions after code updates.",
+    "project_id": "proj_002",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_testing",
+        "level": 4
+      }
+    ],
+    "difficulty": 3,
+    "est_hours": 7,
+    "status": "open",
+    "blocked_by": [
+      "task_015"
+    ]
+  },
+  {
+    "id": "task_020",
+    "title": "Document Fraud Model Limitations",
+    "description": "Record the model's known limitations, evaluation results, and recommended review procedures.",
+    "project_id": "proj_002",
+    "needs_skills": [
+      {
+        "skill_id": "skill_documentation",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_python",
+        "level": 2
+      }
+    ],
+    "difficulty": 2,
+    "est_hours": 4,
+    "status": "open",
+    "blocked_by": [
+      "task_018"
+    ]
+  },
+  {
+    "id": "task_021",
+    "title": "Update Product Page Documentation",
+    "description": "Document the product page components and the API fields used to display product information.",
+    "project_id": "proj_003",
+    "needs_skills": [
+      {
+        "skill_id": "skill_documentation",
+        "level": 2
+      },
+      {
+        "skill_id": "skill_react",
+        "level": 2
+      }
+    ],
+    "difficulty": 1,
+    "est_hours": 3,
+    "status": "done",
+    "blocked_by": []
+  },
+  {
+    "id": "task_022",
+    "title": "Fix Shopping Cart Quantity Bug",
+    "description": "Fix the shopping cart so that changing a product quantity updates the displayed subtotal correctly.",
+    "project_id": "proj_003",
+    "needs_skills": [
+      {
+        "skill_id": "skill_javascript",
+        "level": 2
+      },
+      {
+        "skill_id": "skill_react",
+        "level": 2
+      }
+    ],
+    "difficulty": 2,
+    "est_hours": 4,
+    "status": "open",
+    "blocked_by": []
+  },
+  {
+    "id": "task_023",
+    "title": "Write Product Card Tests",
+    "description": "Add frontend tests for product cards, prices, availability labels, and navigation links.",
+    "project_id": "proj_003",
+    "needs_skills": [
+      {
+        "skill_id": "skill_react",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_testing",
+        "level": 2
+      }
+    ],
+    "difficulty": 2,
+    "est_hours": 5,
+    "status": "open",
+    "blocked_by": []
+  },
+  {
+    "id": "task_024",
+    "title": "Build Product Search Interface",
+    "description": "Implement a searchable product listing interface with filtering and sorting options.",
+    "project_id": "proj_003",
+    "needs_skills": [
+      {
+        "skill_id": "skill_javascript",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_react",
+        "level": 4
+      }
+    ],
+    "difficulty": 3,
+    "est_hours": 9,
+    "status": "in_progress",
+    "blocked_by": []
+  },
+  {
+    "id": "task_025",
+    "title": "Develop Inventory API",
+    "description": "Create Node.js endpoints for retrieving inventory quantities and updating product stock levels.",
+    "project_id": "proj_003",
+    "needs_skills": [
+      {
+        "skill_id": "skill_node",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_rest_api",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_mongodb",
+        "level": 3
+      }
+    ],
+    "difficulty": 4,
+    "est_hours": 12,
+    "status": "open",
+    "blocked_by": []
+  },
+  {
+    "id": "task_026",
+    "title": "Improve Product Image Loading",
+    "description": "Optimize product image loading to improve the shopping experience on slower network connections.",
+    "project_id": "proj_003",
+    "needs_skills": [
+      {
+        "skill_id": "skill_javascript",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_react",
+        "level": 3
+      }
+    ],
+    "difficulty": 3,
+    "est_hours": 6,
+    "status": "open",
+    "blocked_by": []
+  },
+  {
+    "id": "task_027",
+    "title": "Integrate Cart and Inventory Services",
+    "description": "Connect shopping cart operations to inventory checks so unavailable products cannot be ordered.",
+    "project_id": "proj_003",
+    "needs_skills": [
+      {
+        "skill_id": "skill_node",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_rest_api",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_retail_ecom",
+        "level": 3
+      }
+    ],
+    "difficulty": 4,
+    "est_hours": 10,
+    "status": "open",
+    "blocked_by": [
+      "task_025"
+    ]
+  },
+  {
+    "id": "task_028",
+    "title": "Add Checkout Integration Tests",
+    "description": "Test shopping cart checkout scenarios including valid orders, unavailable stock, and invalid quantities.",
+    "project_id": "proj_003",
+    "needs_skills": [
+      {
+        "skill_id": "skill_testing",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_javascript",
+        "level": 3
+      }
+    ],
+    "difficulty": 3,
+    "est_hours": 7,
+    "status": "open",
+    "blocked_by": [
+      "task_027"
+    ]
+  },
+  {
+    "id": "task_029",
+    "title": "Optimize Product Database Queries",
+    "description": "Improve MongoDB queries used to retrieve products by category, price, and availability.",
+    "project_id": "proj_003",
+    "needs_skills": [
+      {
+        "skill_id": "skill_mongodb",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_node",
+        "level": 3
+      }
+    ],
+    "difficulty": 3,
+    "est_hours": 8,
+    "status": "open",
+    "blocked_by": []
+  },
+  {
+    "id": "task_030",
+    "title": "Review E-Commerce Release",
+    "description": "Review the release changes for defects, test coverage, and compatibility with existing shopping workflows.",
+    "project_id": "proj_003",
+    "needs_skills": [
+      {
+        "skill_id": "skill_code_review",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_testing",
+        "level": 4
+      }
+    ],
+    "difficulty": 3,
+    "est_hours": 6,
+    "status": "open",
+    "blocked_by": [
+      "task_028",
+      "task_029"
+    ]
+  },
+  {
+    "id": "task_031",
+    "title": "Document Recommendation Data Fields",
+    "description": "Describe the product and customer data fields used by the recommendation engine.",
+    "project_id": "proj_004",
+    "needs_skills": [
+      {
+        "skill_id": "skill_documentation",
+        "level": 2
+      },
+      {
+        "skill_id": "skill_python",
+        "level": 2
+      }
+    ],
+    "difficulty": 1,
+    "est_hours": 3,
+    "status": "open",
+    "blocked_by": []
+  },
+  {
+    "id": "task_032",
+    "title": "Clean Product Interaction Data",
+    "description": "Remove duplicate product interaction events and handle missing product identifiers in the training data.",
+    "project_id": "proj_004",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_sql",
+        "level": 2
+      }
+    ],
+    "difficulty": 2,
+    "est_hours": 5,
+    "status": "open",
+    "blocked_by": []
+  },
+  {
+    "id": "task_033",
+    "title": "Create Recommendation API Tests",
+    "description": "Write tests for recommendation responses when customers have different browsing and purchase histories.",
+    "project_id": "proj_004",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_testing",
+        "level": 2
+      }
+    ],
+    "difficulty": 2,
+    "est_hours": 4,
+    "status": "open",
+    "blocked_by": []
+  },
+  {
+    "id": "task_034",
+    "title": "Build Recommendation Ranking Model",
+    "description": "Develop a ranking model that orders products according to customer preferences and interaction history.",
+    "project_id": "proj_004",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_retail_ecom",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_sql",
+        "level": 3
+      }
+    ],
+    "difficulty": 5,
+    "est_hours": 18,
+    "status": "in_progress",
+    "blocked_by": [
+      "task_032"
+    ]
+  },
+  {
+    "id": "task_035",
+    "title": "Implement Product Feature Extraction",
+    "description": "Extract product category, price range, and popularity features for use in recommendation ranking.",
+    "project_id": "proj_004",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_sql",
+        "level": 3
+      }
+    ],
+    "difficulty": 3,
+    "est_hours": 8,
+    "status": "open",
+    "blocked_by": [
+      "task_032"
+    ]
+  },
+  {
+    "id": "task_036",
+    "title": "Create Recommendation Service API",
+    "description": "Build a REST API that returns ranked product recommendations for a given customer identifier.",
+    "project_id": "proj_004",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_fastapi",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_rest_api",
+        "level": 4
+      }
+    ],
+    "difficulty": 4,
+    "est_hours": 10,
+    "status": "open",
+    "blocked_by": [
+      "task_034"
+    ]
+  },
+  {
+    "id": "task_037",
+    "title": "Cache Popular Recommendations",
+    "description": "Cache frequently requested product recommendations to reduce response time and repeated database queries.",
+    "project_id": "proj_004",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_redis",
+        "level": 3
+      }
+    ],
+    "difficulty": 3,
+    "est_hours": 7,
+    "status": "open",
+    "blocked_by": [
+      "task_036"
+    ]
+  },
+  {
+    "id": "task_038",
+    "title": "Evaluate Recommendation Quality",
+    "description": "Compare recommended products against held-out interaction data to measure ranking quality.",
+    "project_id": "proj_004",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_testing",
+        "level": 3
+      }
+    ],
+    "difficulty": 4,
+    "est_hours": 9,
+    "status": "open",
+    "blocked_by": [
+      "task_034"
+    ]
+  },
+  {
+    "id": "task_039",
+    "title": "Deploy Recommendation Service",
+    "description": "Package the recommendation service in Docker and deploy it to a suitable cloud environment.",
+    "project_id": "proj_004",
+    "needs_skills": [
+      {
+        "skill_id": "skill_docker",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_aws",
+        "level": 3
+      }
+    ],
+    "difficulty": 4,
+    "est_hours": 10,
+    "status": "open",
+    "blocked_by": [
+      "task_036"
+    ]
+  },
+  {
+    "id": "task_040",
+    "title": "Document Recommendation API Usage",
+    "description": "Write examples explaining how frontend developers can request and display product recommendations.",
+    "project_id": "proj_004",
+    "needs_skills": [
+      {
+        "skill_id": "skill_documentation",
+        "level": 2
+      },
+      {
+        "skill_id": "skill_rest_api",
+        "level": 2
+      }
+    ],
+    "difficulty": 1,
+    "est_hours": 3,
+    "status": "open",
+    "blocked_by": [
+      "task_036"
+    ]
+  },
+  {
+    "id": "task_041",
+    "title": "Document Patient API Fields",
+    "description": "Document patient records, appointment fields, and the validation rules used by the healthcare API.",
+    "project_id": "proj_005",
+    "needs_skills": [
+      {
+        "skill_id": "skill_documentation",
+        "level": 2
+      },
+      {
+        "skill_id": "skill_rest_api",
+        "level": 2
+      }
+    ],
+    "difficulty": 1,
+    "est_hours": 3,
+    "status": "open",
+    "blocked_by": []
+  },
+  {
+    "id": "task_042",
+    "title": "Fix Appointment Validation Bug",
+    "description": "Prevent the appointment API from accepting requests with invalid appointment dates or missing patient identifiers.",
+    "project_id": "proj_005",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 2
+      },
+      {
+        "skill_id": "skill_fastapi",
+        "level": 2
+      }
+    ],
+    "difficulty": 2,
+    "est_hours": 4,
+    "status": "open",
+    "blocked_by": []
+  },
+  {
+    "id": "task_043",
+    "title": "Write Patient Record Tests",
+    "description": "Create tests for patient record creation, retrieval, and handling of invalid input.",
+    "project_id": "proj_005",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_testing",
+        "level": 2
+      }
+    ],
+    "difficulty": 2,
+    "est_hours": 5,
+    "status": "open",
+    "blocked_by": []
+  },
+  {
+    "id": "task_044",
+    "title": "Design Patient Database Schema",
+    "description": "Design PostgreSQL tables for patients, appointments, clinicians, and appointment statuses.",
+    "project_id": "proj_005",
+    "needs_skills": [
+      {
+        "skill_id": "skill_postgres",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_sql",
+        "level": 4
+      }
+    ],
+    "difficulty": 4,
+    "est_hours": 10,
+    "status": "in_progress",
+    "blocked_by": []
+  },
+  {
+    "id": "task_045",
+    "title": "Implement Appointment Scheduling API",
+    "description": "Build API endpoints that create appointments and prevent conflicting bookings for the same clinician.",
+    "project_id": "proj_005",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_fastapi",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_postgres",
+        "level": 4
+      }
+    ],
+    "difficulty": 4,
+    "est_hours": 12,
+    "status": "open",
+    "blocked_by": [
+      "task_044"
+    ]
+  },
+  {
+    "id": "task_046",
+    "title": "Add Patient Data Access Controls",
+    "description": "Enforce access rules that prevent unauthorized users from viewing protected patient records.",
+    "project_id": "proj_005",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_rest_api",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_healthcare_hl7",
+        "level": 3
+      }
+    ],
+    "difficulty": 4,
+    "est_hours": 10,
+    "status": "in_progress",
+    "blocked_by": []
+  },
+  {
+    "id": "task_047",
+    "title": "Integrate Healthcare Data Standards",
+    "description": "Map patient and appointment data to the relevant healthcare HL7 or FHIR resource structures.",
+    "project_id": "proj_005",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_healthcare_hl7",
+        "level": 4
+      }
+    ],
+    "difficulty": 5,
+    "est_hours": 14,
+    "status": "open",
+    "blocked_by": [
+      "task_044"
+    ]
+  },
+  {
+    "id": "task_048",
+    "title": "Optimize Appointment Search Queries",
+    "description": "Optimize database queries used to retrieve appointments by patient, clinician, and date.",
+    "project_id": "proj_005",
+    "needs_skills": [
+      {
+        "skill_id": "skill_postgres",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_sql",
+        "level": 4
+      }
+    ],
+    "difficulty": 3,
+    "est_hours": 7,
+    "status": "open",
+    "blocked_by": [
+      "task_044"
+    ]
+  },
+  {
+    "id": "task_049",
+    "title": "Test Appointment Workflow",
+    "description": "Run integration tests covering appointment booking, cancellation, rescheduling, and conflicting time slots.",
+    "project_id": "proj_005",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_testing",
+        "level": 4
+      }
+    ],
+    "difficulty": 3,
+    "est_hours": 8,
+    "status": "open",
+    "blocked_by": [
+      "task_045"
+    ]
+  },
+  {
+    "id": "task_050",
+    "title": "Review Healthcare Data Handling",
+    "description": "Review patient data handling practices and document areas requiring stronger access controls or safeguards.",
+    "project_id": "proj_005",
+    "needs_skills": [
+      {
+        "skill_id": "skill_healthcare_hl7",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_documentation",
+        "level": 3
+      }
+    ],
+    "difficulty": 3,
+    "est_hours": 6,
+    "status": "open",
+    "blocked_by": [
+      "task_046"
+    ]
+  },
+  {
+    "id": "task_051",
+    "title": "Document Network Monitoring Metrics",
+    "description": "Document the network performance metrics and thresholds used to identify potential telecom incidents.",
+    "project_id": "proj_006",
+    "needs_skills": [
+      {
+        "skill_id": "skill_documentation",
+        "level": 2
+      },
+      {
+        "skill_id": "skill_telecom_oss",
+        "level": 2
+      }
+    ],
+    "difficulty": 1,
+    "est_hours": 3,
+    "status": "open",
+    "blocked_by": []
+  },
+  {
+    "id": "task_052",
+    "title": "Clean Network Event Records",
+    "description": "Remove duplicate network events and correct missing timestamps in the sample monitoring dataset.",
+    "project_id": "proj_006",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_sql",
+        "level": 2
+      }
+    ],
+    "difficulty": 2,
+    "est_hours": 5,
+    "status": "open",
+    "blocked_by": []
+  },
+  {
+    "id": "task_053",
+    "title": "Create Network Event Tests",
+    "description": "Write tests for network event parsing, timestamp validation, and missing metric values.",
+    "project_id": "proj_006",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_testing",
+        "level": 2
+      }
+    ],
+    "difficulty": 2,
+    "est_hours": 4,
+    "status": "open",
+    "blocked_by": []
+  },
+  {
+    "id": "task_054",
+    "title": "Build Network Event Consumer",
+    "description": "Implement a Kafka consumer that processes network events from telecom monitoring systems.",
+    "project_id": "proj_006",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_kafka",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_telecom_oss",
+        "level": 4
+      }
+    ],
+    "difficulty": 4,
+    "est_hours": 12,
+    "status": "in_progress",
+    "blocked_by": []
+  },
+  {
+    "id": "task_055",
+    "title": "Store Network Performance Metrics",
+    "description": "Store processed network metrics in a database for historical analysis and incident investigation.",
+    "project_id": "proj_006",
+    "needs_skills": [
+      {
+        "skill_id": "skill_sql",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_python",
+        "level": 3
+      }
+    ],
+    "difficulty": 3,
+    "est_hours": 8,
+    "status": "open",
+    "blocked_by": []
+  },
+  {
+    "id": "task_056",
+    "title": "Detect Network Performance Anomalies",
+    "description": "Develop an anomaly detection process that flags unusual changes in network performance metrics.",
+    "project_id": "proj_006",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_sql",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_telecom_oss",
+        "level": 4
+      }
+    ],
+    "difficulty": 5,
+    "est_hours": 16,
+    "status": "open",
+    "blocked_by": [
+      "task_052",
+      "task_055"
+    ]
+  },
+  {
+    "id": "task_057",
+    "title": "Configure Incident Alert Messaging",
+    "description": "Publish incident notifications when processed network events exceed configured performance thresholds.",
+    "project_id": "proj_006",
+    "needs_skills": [
+      {
+        "skill_id": "skill_kafka",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      }
+    ],
+    "difficulty": 4,
+    "est_hours": 10,
+    "status": "open",
+    "blocked_by": [
+      "task_054",
+      "task_056"
+    ]
+  },
+  {
+    "id": "task_058",
+    "title": "Build Incident Analytics Queries",
+    "description": "Create SQL queries that summarize incidents by network region, severity, and time period.",
+    "project_id": "proj_006",
+    "needs_skills": [
+      {
+        "skill_id": "skill_sql",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_telecom_oss",
+        "level": 3
+      }
+    ],
+    "difficulty": 3,
+    "est_hours": 7,
+    "status": "open",
+    "blocked_by": [
+      "task_055"
+    ]
+  },
+  {
+    "id": "task_059",
+    "title": "Containerize Monitoring Service",
+    "description": "Package the network monitoring service into a Docker container for consistent deployment.",
+    "project_id": "proj_006",
+    "needs_skills": [
+      {
+        "skill_id": "skill_docker",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_aws",
+        "level": 3
+      }
+    ],
+    "difficulty": 3,
+    "est_hours": 6,
+    "status": "open",
+    "blocked_by": [
+      "task_054"
+    ]
+  },
+  {
+    "id": "task_060",
+    "title": "Validate Incident Detection Pipeline",
+    "description": "Run end-to-end tests to verify that network events are processed, anomalies are detected, and alerts are generated correctly.",
+    "project_id": "proj_006",
+    "needs_skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_kafka",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_testing",
+        "level": 4
+      }
+    ],
+    "difficulty": 4,
+    "est_hours": 10,
+    "status": "open",
+    "blocked_by": [
+      "task_056",
+      "task_057"
+    ]
+  }
+]

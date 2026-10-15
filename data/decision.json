@@ -1,0 +1,167 @@
+[
+  {
+    "id": "decision_kafka",
+    "title": "Adopt Kafka for asynchronous event processing",
+    "summary": "Use Apache Kafka to process payment and transaction events asynchronously instead of making every service communicate synchronously.",
+    "rationale": "The initial design used synchronous REST calls between the payment service, fraud detection service, and transaction audit service. Load testing showed that the synchronous design could process approximately 450 transactions per second before latency increased sharply. Kafka was selected to decouple these services, buffer traffic spikes, and allow consumers to process events independently. RabbitMQ was considered because it is simpler for traditional task queues, but Kafka was preferred because the system needs event replay, durable event history, and multiple independent consumers. The trade-off is additional infrastructure, partition management, and operational complexity. The team will begin with 3 brokers and 6 partitions, then adjust based on measured throughput.",
+    "made_by": "emp_001",
+    "date": "2026-02-10",
+    "affects_project_id": "proj_001",
+    "derived_from": "doc_payment_architecture",
+    "supersedes": null
+  },
+  {
+    "id": "decision_kafka_v2",
+    "title": "Revise Kafka deployment and event-processing strategy",
+    "summary": "Retain Kafka but introduce a staged rollout, idempotent consumers, and explicit retry and dead-letter handling.",
+    "rationale": "The original Kafka decision established asynchronous processing but did not sufficiently address duplicate events, consumer failures, or deployment risk. During a controlled test, replaying a batch of 10,000 transaction events exposed the possibility of duplicate downstream processing when a consumer restarted after completing an operation but before committing its offset. Replacing Kafka with synchronous REST would reduce operational complexity but reintroduce service coupling and weaker burst handling. The revised approach keeps Kafka, adds idempotency keys to transaction handlers, configures bounded retries and a dead-letter topic, and requires reconciliation checks before production rollout. The team will validate correctness with at least 100,000 replayed test events before enabling the new path for all transactions.",
+    "made_by": "emp_002",
+    "date": "2026-03-05",
+    "affects_project_id": "proj_001",
+    "derived_from": "doc_kafka_reliability_review",
+    "supersedes": "decision_kafka"
+  },
+  {
+    "id": "decision_003",
+    "title": "Use PostgreSQL for transactional records",
+    "summary": "Store customer, account, and payment records in PostgreSQL rather than using a document database as the primary transactional store.",
+    "rationale": "The payment workflow requires reliable transactions, constraints, and consistent account updates. PostgreSQL was selected because its relational model and transaction support fit these requirements. MongoDB was considered for flexible document structures, but it would require additional care around relational reporting and consistency across related records. PostgreSQL may require deliberate indexing and query tuning as data grows. The team will add indexes for account identifiers, transaction timestamps, and payment status, then test the main queries against a dataset of at least one million transaction records.",
+    "made_by": "emp_003",
+    "date": "2026-02-12",
+    "affects_project_id": "proj_001",
+    "derived_from": "doc_payment_database_comparison",
+    "supersedes": null
+  },
+  {
+    "id": "decision_004",
+    "title": "Separate fraud scoring from payment execution",
+    "summary": "Run fraud scoring as an independent service instead of embedding all fraud rules in the payment API.",
+    "rationale": "Embedding fraud rules in the payment API would simplify the first release but make rule changes and model updates harder to deploy independently. A separate scoring service allows the team to update risk logic without rebuilding the payment endpoint. The trade-off is an additional network hop and another service to monitor. The team will set a target of less than 100 milliseconds for the fraud-scoring service at the 95th percentile during normal load and define a safe fallback for scoring timeouts.",
+    "made_by": "emp_004",
+    "date": "2026-02-18",
+    "affects_project_id": "proj_002",
+    "derived_from": "doc_fraud_detection_design",
+    "supersedes": null
+  },
+  {
+    "id": "decision_005",
+    "title": "Use React for the retail storefront",
+    "summary": "Build the retail customer interface with React and consume the product and cart APIs through a separate frontend layer.",
+    "rationale": "The team compared React with server-rendered templates and a Vue-based implementation. React was selected because the team already has reusable components and experience with JavaScript, reducing the expected implementation effort. Server-rendered templates could simplify the initial page but would make interactive cart updates and reusable client-side components less convenient. The trade-off is the need to manage frontend state, accessibility, and bundle size. The team will prioritize product listing, search, cart updates, and responsive layouts before advanced animations.",
+    "made_by": "emp_005",
+    "date": "2026-02-20",
+    "affects_project_id": "proj_003",
+    "derived_from": "doc_retail_frontend_architecture",
+    "supersedes": null
+  },
+  {
+    "id": "decision_006",
+    "title": "Add Redis caching for frequently viewed products",
+    "summary": "Cache popular product details and category responses in Redis to reduce repeated database reads.",
+    "rationale": "Initial storefront traffic estimates suggest that product detail and category queries will account for a large share of read traffic. Querying PostgreSQL for every request is simple but may increase response times during promotional peaks. Redis was chosen over adding more database replicas as the first optimization because cached responses can reduce repeated reads at lower initial complexity. The trade-off is cache invalidation and the risk of stale prices or stock information. Product descriptions may use a five-minute time-to-live, while price and inventory data must be refreshed more carefully and verified at checkout.",
+    "made_by": "emp_006",
+    "date": "2026-02-24",
+    "affects_project_id": "proj_003",
+    "derived_from": "doc_retail_performance_review",
+    "supersedes": null
+  },
+  {
+    "id": "decision_007",
+    "title": "Keep inventory validation in the checkout path",
+    "summary": "Revalidate stock availability during checkout even when product pages display cached inventory information.",
+    "rationale": "Caching inventory improves page response times, but two customers could attempt to buy the final unit while seeing the same cached stock value. Trusting the cache alone would increase overselling risk. The team considered very short cache expiry for all inventory requests, but that would increase database traffic without fully preventing race conditions. The selected approach uses cached availability for browsing and an atomic database-level stock check when an order is placed. The trade-off is a small amount of additional checkout latency in exchange for stronger inventory correctness.",
+    "made_by": "emp_007",
+    "date": "2026-02-27",
+    "affects_project_id": "proj_003",
+    "derived_from": "doc_inventory_consistency",
+    "supersedes": null
+  },
+  {
+    "id": "decision_008",
+    "title": "Use a relational model for appointment scheduling",
+    "summary": "Represent patients, clinicians, and appointments as related PostgreSQL records with explicit constraints.",
+    "rationale": "Appointment scheduling needs reliable relationships between patients, clinicians, time slots, and appointment status. PostgreSQL was preferred over MongoDB because relational constraints and transactions simplify prevention of conflicting bookings. A document database was considered for flexible patient metadata, but it was not selected as the primary scheduling store. The trade-off is that schema changes must be managed carefully as requirements evolve. The team will enforce uniqueness or equivalent transactional checks for clinician and time-slot combinations and test concurrent booking attempts.",
+    "made_by": "emp_008",
+    "date": "2026-03-02",
+    "affects_project_id": "proj_005",
+    "derived_from": "doc_healthcare_scheduling_schema",
+    "supersedes": null
+  },
+  {
+    "id": "decision_009",
+    "title": "Use HL7 FHIR-compatible structures for healthcare integration",
+    "summary": "Align patient and appointment integration payloads with relevant HL7 FHIR resource structures.",
+    "rationale": "The healthcare client needs data exchange with systems that may use different internal schemas. A custom payload would be quicker initially but would increase mapping work for each integration. FHIR-compatible structures provide a common vocabulary and improve interoperability. The trade-off is additional mapping, validation, and version compatibility work. The first integration will cover the patient and appointment data needed for the project, rather than implementing the full FHIR specification. All sample data used in development must be synthetic.",
+    "made_by": "emp_009",
+    "date": "2026-03-04",
+    "affects_project_id": "proj_005",
+    "derived_from": "doc_fhir_integration_scope",
+    "supersedes": null
+  },
+  {
+    "id": "decision_010",
+    "title": "Separate telecom alarm ingestion from dashboard queries",
+    "summary": "Process incoming network alarms through a background ingestion pipeline and store query-ready records for the monitoring dashboard.",
+    "rationale": "A synchronous design would force alarm ingestion to wait for dashboard-oriented processing, creating a risk that bursts of network events delay ingestion. A background pipeline separates incoming events from aggregation and display. Kafka was considered for its buffering and replay capabilities, while a simpler direct database write path would reduce infrastructure overhead. The team selected the background approach for burst tolerance but will first measure event volume and operational cost before expanding the broker cluster. The initial acceptance test will simulate 5,000 alarms in a short burst and check that no accepted alarm is silently lost.",
+    "made_by": "emp_010",
+    "date": "2026-03-06",
+    "affects_project_id": "proj_006",
+    "derived_from": "doc_telecom_alarm_pipeline",
+    "supersedes": null
+  },
+  {
+    "id": "decision_011",
+    "title": "Use role-based access for internal project tools",
+    "summary": "Apply role-based access control to administrative endpoints and internal operational dashboards.",
+    "rationale": "Giving every authenticated employee access to every operational function would be easier to implement but would expose unnecessary actions and data. The team considered individual permissions for every user, but that approach would increase maintenance effort. Role-based access was selected with distinct viewer, developer, and administrator permissions. The trade-off is that roles must be reviewed as responsibilities change. The team will test all three roles against the main read, update, and administrative actions before release.",
+    "made_by": "emp_011",
+    "date": "2026-03-09",
+    "affects_project_id": "proj_001",
+    "derived_from": "doc_internal_access_control",
+    "supersedes": null
+  },
+  {
+    "id": "decision_012",
+    "title": "Adopt automated API contract tests",
+    "summary": "Add automated tests for required fields, response formats, error cases, and compatibility between service versions.",
+    "rationale": "Manual testing can catch obvious failures but is repeated slowly and may miss regressions when several services change together. The team considered relying on end-to-end tests alone, but these are slower to diagnose and may depend on external systems. Contract tests were selected to validate API behavior independently and identify breaking changes earlier. The trade-off is maintaining test fixtures and updating tests when contracts intentionally change. The release target is at least 80% line coverage for critical payment and booking logic, alongside explicit tests for important failure paths.",
+    "made_by": "emp_012",
+    "date": "2026-03-11",
+    "affects_project_id": "proj_001",
+    "derived_from": "doc_api_quality_strategy",
+    "supersedes": null
+  },
+  {
+    "id": "decision_013",
+    "title": "Standardize containerized development environments",
+    "summary": "Use Docker Compose for local development dependencies so team members can run consistent service environments.",
+    "rationale": "Installing databases and message brokers separately on each developer machine creates version differences and setup problems. A shared Docker Compose configuration makes local dependencies more consistent and reduces onboarding effort. A full Kubernetes development environment was considered but rejected for the first phase because it adds setup and troubleshooting overhead. The trade-off is that developers still need basic container knowledge and sufficient local resources. The team will document a single startup command and verify the setup on at least two clean development machines.",
+    "made_by": "emp_013",
+    "date": "2026-03-13",
+    "affects_project_id": "proj_004",
+    "derived_from": "doc_developer_environment",
+    "supersedes": null
+  },
+  {
+    "id": "decision_014",
+    "title": "Introduce a staged production rollout",
+    "summary": "Release new payment and event-processing changes to a small share of traffic before enabling them for all users.",
+    "rationale": "A full rollout is faster but makes it harder to limit the impact of a defect in transaction handling or event consumption. Blue-green deployment was considered, but it may require more infrastructure and careful coordination of stateful consumers. The team selected a staged rollout with an initial 5% traffic allocation, monitored error rates and duplicate-processing indicators, and rollback criteria defined before deployment. The trade-off is a longer release process and additional monitoring work. Expansion to 25%, 50%, and 100% will occur only when each stage meets the agreed health checks.",
+    "made_by": "emp_014",
+    "date": "2026-03-17",
+    "affects_project_id": "proj_002",
+    "derived_from": "doc_production_release_policy",
+    "supersedes": null
+  },
+  {
+    "id": "decision_015",
+    "title": "Require source-linked documentation for architecture decisions",
+    "summary": "Store architecture decisions with supporting design documents, alternatives, measurable trade-offs, and links to affected projects.",
+    "rationale": "Decisions discussed in chat or meetings are difficult for new employees to discover and verify later. A plain wiki page is easy to maintain but may not connect a decision to the project, people responsible, or later decisions that replace it. The team will maintain structured decision records with a source document identifier, decision owner, affected project, rationale, and supersession relationship. The trade-off is a small documentation cost for every significant decision. The target is for all major architecture decisions to have a source document and named owner before implementation begins.",
+    "made_by": "emp_015",
+    "date": "2026-03-20",
+    "affects_project_id": "proj_001",
+    "derived_from": "doc_architecture_decision_process",
+    "supersedes": null
+  }
+]

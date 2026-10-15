@@ -1,0 +1,682 @@
+[
+  {
+    "id": "emp_001",
+    "name": "Arjun Mehta",
+    "role": "Backend Developer",
+    "team_id": "team_001",
+    "joined_date": "2026-09-15",
+    "is_new_hire": true,
+    "skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_fastapi",
+        "level": 2
+      },
+      {
+        "skill_id": "skill_sql",
+        "level": 2
+      }
+    ],
+    "mentor_id": "emp_006",
+    "project_id": "proj_001"
+  },
+  {
+    "id": "emp_002",
+    "name": "Priya Nair",
+    "role": "AI Engineer",
+    "team_id": "team_002",
+    "joined_date": "2026-09-22",
+    "is_new_hire": true,
+    "skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_kafka",
+        "level": 1
+      }
+    ],
+    "mentor_id": "emp_007",
+    "project_id": "proj_002"
+  },
+  {
+    "id": "emp_003",
+    "name": "Rohan Desai",
+    "role": "Frontend Developer",
+    "team_id": "team_003",
+    "joined_date": "2026-09-05",
+    "is_new_hire": true,
+    "skills": [
+      {
+        "skill_id": "skill_javascript",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_react",
+        "level": 2
+      }
+    ],
+    "mentor_id": "emp_008",
+    "project_id": "proj_003"
+  },
+  {
+    "id": "emp_004",
+    "name": "Sneha Rao",
+    "role": "Data Engineer",
+    "team_id": "team_004",
+    "joined_date": "2026-08-30",
+    "is_new_hire": true,
+    "skills": [
+      {
+        "skill_id": "skill_sql",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_python",
+        "level": 2
+      },
+      {
+        "skill_id": "skill_kafka",
+        "level": 1
+      }
+    ],
+    "mentor_id": "emp_009",
+    "project_id": "proj_006"
+  },
+  {
+    "id": "emp_005",
+    "name": "Karan Shah",
+    "role": "Cloud Engineer",
+    "team_id": "team_005",
+    "joined_date": "2026-09-28",
+    "is_new_hire": true,
+    "skills": [
+      {
+        "skill_id": "skill_aws",
+        "level": 2
+      },
+      {
+        "skill_id": "skill_docker",
+        "level": 3
+      }
+    ],
+    "mentor_id": "emp_010",
+    "project_id": "proj_004"
+  },
+  {
+    "id": "emp_006",
+    "name": "Vikram Sharma",
+    "role": "Senior Backend Developer",
+    "team_id": "team_001",
+    "joined_date": "2023-04-10",
+    "is_new_hire": false,
+    "skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_fastapi",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_postgres",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_rest_api",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_banking_compliance",
+        "level": 4
+      }
+    ],
+    "mentor_id": null,
+    "project_id": "proj_001"
+  },
+  {
+    "id": "emp_007",
+    "name": "Ananya Iyer",
+    "role": "Senior AI Engineer",
+    "team_id": "team_002",
+    "joined_date": "2022-08-15",
+    "is_new_hire": false,
+    "skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_kafka",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_sql",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_testing",
+        "level": 4
+      }
+    ],
+    "mentor_id": null,
+    "project_id": "proj_002"
+  },
+  {
+    "id": "emp_008",
+    "name": "Rahul Verma",
+    "role": "Senior Frontend Developer",
+    "team_id": "team_003",
+    "joined_date": "2021-11-01",
+    "is_new_hire": false,
+    "skills": [
+      {
+        "skill_id": "skill_javascript",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_react",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_node",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_git",
+        "level": 4
+      }
+    ],
+    "mentor_id": null,
+    "project_id": "proj_003"
+  },
+  {
+    "id": "emp_009",
+    "name": "Meera Krishnan",
+    "role": "Senior Data Engineer",
+    "team_id": "team_004",
+    "joined_date": "2022-02-14",
+    "is_new_hire": false,
+    "skills": [
+      {
+        "skill_id": "skill_sql",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_python",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_kafka",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_neo4j",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_aws",
+        "level": 3
+      }
+    ],
+    "mentor_id": null,
+    "project_id": "proj_006"
+  },
+  {
+    "id": "emp_010",
+    "name": "Aditya Rao",
+    "role": "Senior Cloud Engineer",
+    "team_id": "team_005",
+    "joined_date": "2021-06-21",
+    "is_new_hire": false,
+    "skills": [
+      {
+        "skill_id": "skill_aws",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_docker",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_kubernetes",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_cicd",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_terraform",
+        "level": 4
+      }
+    ],
+    "mentor_id": null,
+    "project_id": "proj_004"
+  },
+  {
+    "id": "emp_011",
+    "name": "Kavya Menon",
+    "role": "Backend Developer",
+    "team_id": "team_001",
+    "joined_date": "2024-03-18",
+    "is_new_hire": false,
+    "skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_fastapi",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_postgres",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_testing",
+        "level": 3
+      }
+    ],
+    "mentor_id": null,
+    "project_id": "proj_005"
+  },
+  {
+    "id": "emp_012",
+    "name": "Siddharth Kulkarni",
+    "role": "Backend Developer",
+    "team_id": "team_001",
+    "joined_date": "2023-09-11",
+    "is_new_hire": false,
+    "skills": [
+      {
+        "skill_id": "skill_java",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_spring_boot",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_postgres",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_microservices",
+        "level": 4
+      }
+    ],
+    "mentor_id": null,
+    "project_id": "proj_001"
+  },
+  {
+    "id": "emp_013",
+    "name": "Nisha Patel",
+    "role": "AI Developer",
+    "team_id": "team_002",
+    "joined_date": "2024-01-08",
+    "is_new_hire": false,
+    "skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_sql",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_aws",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_testing",
+        "level": 4
+      }
+    ],
+    "mentor_id": null,
+    "project_id": "proj_002"
+  },
+  {
+    "id": "emp_014",
+    "name": "Manoj Reddy",
+    "role": "Frontend Developer",
+    "team_id": "team_003",
+    "joined_date": "2023-06-05",
+    "is_new_hire": false,
+    "skills": [
+      {
+        "skill_id": "skill_javascript",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_react",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_typescript",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_git",
+        "level": 3
+      }
+    ],
+    "mentor_id": null,
+    "project_id": "proj_003"
+  },
+  {
+    "id": "emp_015",
+    "name": "Divya Shetty",
+    "role": "Data Analyst",
+    "team_id": "team_004",
+    "joined_date": "2024-07-22",
+    "is_new_hire": false,
+    "skills": [
+      {
+        "skill_id": "skill_sql",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_postgres",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_documentation",
+        "level": 3
+      }
+    ],
+    "mentor_id": null,
+    "project_id": "proj_006"
+  },
+  {
+    "id": "emp_016",
+    "name": "Akash Jain",
+    "role": "DevOps Engineer",
+    "team_id": "team_005",
+    "joined_date": "2022-12-12",
+    "is_new_hire": false,
+    "skills": [
+      {
+        "skill_id": "skill_aws",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_docker",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_kubernetes",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_cicd",
+        "level": 4
+      }
+    ],
+    "mentor_id": null,
+    "project_id": "proj_004"
+  },
+  {
+    "id": "emp_017",
+    "name": "Pooja Nambiar",
+    "role": "Backend Developer",
+    "team_id": "team_001",
+    "joined_date": "2023-02-20",
+    "is_new_hire": false,
+    "skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_fastapi",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_postgres",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_rest_api",
+        "level": 4
+      }
+    ],
+    "mentor_id": null,
+    "project_id": "proj_005"
+  },
+  {
+    "id": "emp_018",
+    "name": "Harish Gowda",
+    "role": "AI Engineer",
+    "team_id": "team_002",
+    "joined_date": "2022-05-09",
+    "is_new_hire": false,
+    "skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_kafka",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_aws",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_sql",
+        "level": 3
+      }
+    ],
+    "mentor_id": null,
+    "project_id": "proj_002"
+  },
+  {
+    "id": "emp_019",
+    "name": "Ishita Bose",
+    "role": "Frontend Developer",
+    "team_id": "team_003",
+    "joined_date": "2023-10-16",
+    "is_new_hire": false,
+    "skills": [
+      {
+        "skill_id": "skill_react",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_javascript",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_typescript",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_testing",
+        "level": 3
+      }
+    ],
+    "mentor_id": null,
+    "project_id": "proj_003"
+  },
+  {
+    "id": "emp_020",
+    "name": "Naveen Kumar",
+    "role": "Data Engineer",
+    "team_id": "team_004",
+    "joined_date": "2022-09-19",
+    "is_new_hire": false,
+    "skills": [
+      {
+        "skill_id": "skill_sql",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_python",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_kafka",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_neo4j",
+        "level": 3
+      }
+    ],
+    "mentor_id": null,
+    "project_id": "proj_006"
+  },
+  {
+    "id": "emp_021",
+    "name": "Tanvi Deshpande",
+    "role": "Cloud Engineer",
+    "team_id": "team_005",
+    "joined_date": "2024-02-26",
+    "is_new_hire": false,
+    "skills": [
+      {
+        "skill_id": "skill_aws",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_docker",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_cicd",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_terraform",
+        "level": 3
+      }
+    ],
+    "mentor_id": null,
+    "project_id": "proj_004"
+  },
+  {
+    "id": "emp_022",
+    "name": "Deepak Pillai",
+    "role": "Backend Developer",
+    "team_id": "team_001",
+    "joined_date": "2024-05-13",
+    "is_new_hire": false,
+    "skills": [
+      {
+        "skill_id": "skill_java",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_spring_boot",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_postgres",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_microservices",
+        "level": 5
+      }
+    ],
+    "mentor_id": null,
+    "project_id": "proj_001"
+  },
+  {
+    "id": "emp_023",
+    "name": "Aishwarya Hegde",
+    "role": "Healthcare Software Engineer",
+    "team_id": "team_001",
+    "joined_date": "2023-08-07",
+    "is_new_hire": false,
+    "skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_fastapi",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_postgres",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_healthcare_hl7",
+        "level": 4
+      }
+    ],
+    "mentor_id": null,
+    "project_id": "proj_005"
+  },
+  {
+    "id": "emp_024",
+    "name": "Sanjay Bhat",
+    "role": "Telecom Data Engineer",
+    "team_id": "team_004",
+    "joined_date": "2023-01-30",
+    "is_new_hire": false,
+    "skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_kafka",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_sql",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_telecom_oss",
+        "level": 5
+      }
+    ],
+    "mentor_id": null,
+    "project_id": "proj_006"
+  },
+  {
+    "id": "emp_025",
+    "name": "Neha Chawla",
+    "role": "Retail Data Engineer",
+    "team_id": "team_004",
+    "joined_date": "2024-06-17",
+    "is_new_hire": false,
+    "skills": [
+      {
+        "skill_id": "skill_python",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_sql",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_mongodb",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_retail_ecom",
+        "level": 4
+      }
+    ],
+    "mentor_id": null,
+    "project_id": "proj_004"
+  }
+]
