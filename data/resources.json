@@ -1,0 +1,813 @@
+[
+  {
+    "id": "res_001",
+    "title": "Python Programming Fundamentals",
+    "type": "course",
+    "url": "https://www.python.org/about/gettingstarted/",
+    "duration_hours": 8,
+    "teaches": [
+      {
+        "skill_id": "skill_python",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": []
+  },
+  {
+    "id": "res_002",
+    "title": "Intermediate Python Development",
+    "type": "course",
+    "url": "https://docs.python.org/3/tutorial/",
+    "duration_hours": 12,
+    "teaches": [
+      {
+        "skill_id": "skill_python",
+        "level": 3
+      },
+      {
+        "skill_id": "skill_testing",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": [
+      "res_001"
+    ]
+  },
+  {
+    "id": "res_003",
+    "title": "Advanced Python Application Design",
+    "type": "course",
+    "url": "https://realpython.com/",
+    "duration_hours": 16,
+    "teaches": [
+      {
+        "skill_id": "skill_python",
+        "level": 5
+      },
+      {
+        "skill_id": "skill_code_review",
+        "level": 4
+      }
+    ],
+    "prerequisite_ids": [
+      "res_002"
+    ]
+  },
+  {
+    "id": "res_004",
+    "title": "Java Language Basics",
+    "type": "course",
+    "url": "https://dev.java/learn/",
+    "duration_hours": 8,
+    "teaches": [
+      {
+        "skill_id": "skill_java",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": []
+  },
+  {
+    "id": "res_005",
+    "title": "Advanced Java Programming",
+    "type": "doc",
+    "url": "https://docs.oracle.com/en/java/",
+    "duration_hours": 14,
+    "teaches": [
+      {
+        "skill_id": "skill_java",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_testing",
+        "level": 3
+      }
+    ],
+    "prerequisite_ids": [
+      "res_004"
+    ]
+  },
+  {
+    "id": "res_006",
+    "title": "JavaScript Essentials",
+    "type": "course",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+    "duration_hours": 8,
+    "teaches": [
+      {
+        "skill_id": "skill_javascript",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": []
+  },
+  {
+    "id": "res_007",
+    "title": "Modern JavaScript Concepts",
+    "type": "video",
+    "url": "https://javascript.info/",
+    "duration_hours": 10,
+    "teaches": [
+      {
+        "skill_id": "skill_javascript",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_testing",
+        "level": 3
+      }
+    ],
+    "prerequisite_ids": [
+      "res_006"
+    ]
+  },
+  {
+    "id": "res_008",
+    "title": "TypeScript for Beginners",
+    "type": "course",
+    "url": "https://www.typescriptlang.org/docs/",
+    "duration_hours": 8,
+    "teaches": [
+      {
+        "skill_id": "skill_typescript",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": [
+      "res_006"
+    ]
+  },
+  {
+    "id": "res_009",
+    "title": "Advanced TypeScript Patterns",
+    "type": "doc",
+    "url": "https://www.typescriptlang.org/docs/handbook/2/types-from-types.html",
+    "duration_hours": 10,
+    "teaches": [
+      {
+        "skill_id": "skill_typescript",
+        "level": 4
+      }
+    ],
+    "prerequisite_ids": [
+      "res_008"
+    ]
+  },
+  {
+    "id": "res_010",
+    "title": "SQL Query Fundamentals",
+    "type": "course",
+    "url": "https://www.postgresql.org/docs/current/tutorial.html",
+    "duration_hours": 7,
+    "teaches": [
+      {
+        "skill_id": "skill_sql",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": []
+  },
+  {
+    "id": "res_011",
+    "title": "Advanced SQL Query Optimization",
+    "type": "doc",
+    "url": "https://use-the-index-luke.com/",
+    "duration_hours": 12,
+    "teaches": [
+      {
+        "skill_id": "skill_sql",
+        "level": 5
+      }
+    ],
+    "prerequisite_ids": [
+      "res_010"
+    ]
+  },
+  {
+    "id": "res_012",
+    "title": "Spring Boot Getting Started",
+    "type": "course",
+    "url": "https://spring.io/guides",
+    "duration_hours": 8,
+    "teaches": [
+      {
+        "skill_id": "skill_spring_boot",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": [
+      "res_004"
+    ]
+  },
+  {
+    "id": "res_013",
+    "title": "Building Production Spring Applications",
+    "type": "doc",
+    "url": "https://docs.spring.io/spring-boot/reference/",
+    "duration_hours": 14,
+    "teaches": [
+      {
+        "skill_id": "skill_spring_boot",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_microservices",
+        "level": 3
+      }
+    ],
+    "prerequisite_ids": [
+      "res_012"
+    ]
+  },
+  {
+    "id": "res_014",
+    "title": "React Fundamentals",
+    "type": "course",
+    "url": "https://react.dev/learn",
+    "duration_hours": 8,
+    "teaches": [
+      {
+        "skill_id": "skill_react",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": [
+      "res_006"
+    ]
+  },
+  {
+    "id": "res_015",
+    "title": "Advanced React Application Patterns",
+    "type": "video",
+    "url": "https://react.dev/reference/react",
+    "duration_hours": 12,
+    "teaches": [
+      {
+        "skill_id": "skill_react",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_testing",
+        "level": 3
+      }
+    ],
+    "prerequisite_ids": [
+      "res_014"
+    ]
+  },
+  {
+    "id": "res_016",
+    "title": "FastAPI First Steps",
+    "type": "course",
+    "url": "https://fastapi.tiangolo.com/tutorial/",
+    "duration_hours": 6,
+    "teaches": [
+      {
+        "skill_id": "skill_fastapi",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": [
+      "res_001"
+    ]
+  },
+  {
+    "id": "res_017",
+    "title": "Production FastAPI Services",
+    "type": "doc",
+    "url": "https://fastapi.tiangolo.com/advanced/",
+    "duration_hours": 12,
+    "teaches": [
+      {
+        "skill_id": "skill_fastapi",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_rest_api",
+        "level": 4
+      }
+    ],
+    "prerequisite_ids": [
+      "res_016"
+    ]
+  },
+  {
+    "id": "res_018",
+    "title": "Django Web Development Basics",
+    "type": "course",
+    "url": "https://docs.djangoproject.com/en/stable/intro/",
+    "duration_hours": 8,
+    "teaches": [
+      {
+        "skill_id": "skill_django",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": [
+      "res_001"
+    ]
+  },
+  {
+    "id": "res_019",
+    "title": "Advanced Django Application Development",
+    "type": "doc",
+    "url": "https://docs.djangoproject.com/en/stable/",
+    "duration_hours": 12,
+    "teaches": [
+      {
+        "skill_id": "skill_django",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_testing",
+        "level": 3
+      }
+    ],
+    "prerequisite_ids": [
+      "res_018"
+    ]
+  },
+  {
+    "id": "res_020",
+    "title": "Node.js Fundamentals",
+    "type": "course",
+    "url": "https://nodejs.org/en/learn",
+    "duration_hours": 7,
+    "teaches": [
+      {
+        "skill_id": "skill_node",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": [
+      "res_006"
+    ]
+  },
+  {
+    "id": "res_021",
+    "title": "Scalable Node.js Services",
+    "type": "doc",
+    "url": "https://nodejs.org/api/",
+    "duration_hours": 12,
+    "teaches": [
+      {
+        "skill_id": "skill_node",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_microservices",
+        "level": 3
+      }
+    ],
+    "prerequisite_ids": [
+      "res_020"
+    ]
+  },
+  {
+    "id": "res_022",
+    "title": "Apache Kafka Fundamentals",
+    "type": "course",
+    "url": "https://kafka.apache.org/documentation/",
+    "duration_hours": 8,
+    "teaches": [
+      {
+        "skill_id": "skill_kafka",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": []
+  },
+  {
+    "id": "res_023",
+    "title": "Kafka Event Streaming Architecture",
+    "type": "video",
+    "url": "https://developer.confluent.io/",
+    "duration_hours": 12,
+    "teaches": [
+      {
+        "skill_id": "skill_kafka",
+        "level": 4
+      },
+      {
+        "skill_id": "skill_microservices",
+        "level": 3
+      }
+    ],
+    "prerequisite_ids": [
+      "res_022"
+    ]
+  },
+  {
+    "id": "res_024",
+    "title": "RabbitMQ Messaging Basics",
+    "type": "course",
+    "url": "https://www.rabbitmq.com/tutorials",
+    "duration_hours": 6,
+    "teaches": [
+      {
+        "skill_id": "skill_rabbitmq",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": []
+  },
+  {
+    "id": "res_025",
+    "title": "REST API Design Principles",
+    "type": "doc",
+    "url": "https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design",
+    "duration_hours": 6,
+    "teaches": [
+      {
+        "skill_id": "skill_rest_api",
+        "level": 3
+      }
+    ],
+    "prerequisite_ids": []
+  },
+  {
+    "id": "res_026",
+    "title": "GraphQL API Fundamentals",
+    "type": "course",
+    "url": "https://graphql.org/learn/",
+    "duration_hours": 7,
+    "teaches": [
+      {
+        "skill_id": "skill_graphql",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": [
+      "res_025"
+    ]
+  },
+  {
+    "id": "res_027",
+    "title": "Microservices Architecture Guide",
+    "type": "doc",
+    "url": "https://microservices.io/",
+    "duration_hours": 10,
+    "teaches": [
+      {
+        "skill_id": "skill_microservices",
+        "level": 3
+      }
+    ],
+    "prerequisite_ids": [
+      "res_025"
+    ]
+  },
+  {
+    "id": "res_028",
+    "title": "PostgreSQL Beginner Tutorial",
+    "type": "course",
+    "url": "https://www.postgresql.org/docs/current/tutorial.html",
+    "duration_hours": 7,
+    "teaches": [
+      {
+        "skill_id": "skill_postgres",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": [
+      "res_010"
+    ]
+  },
+  {
+    "id": "res_029",
+    "title": "PostgreSQL Performance Tuning",
+    "type": "doc",
+    "url": "https://www.postgresql.org/docs/current/performance-tips.html",
+    "duration_hours": 10,
+    "teaches": [
+      {
+        "skill_id": "skill_postgres",
+        "level": 4
+      }
+    ],
+    "prerequisite_ids": [
+      "res_028"
+    ]
+  },
+  {
+    "id": "res_030",
+    "title": "MongoDB CRUD Operations",
+    "type": "course",
+    "url": "https://www.mongodb.com/docs/manual/crud/",
+    "duration_hours": 6,
+    "teaches": [
+      {
+        "skill_id": "skill_mongodb",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": []
+  },
+  {
+    "id": "res_031",
+    "title": "Advanced MongoDB Data Modeling",
+    "type": "doc",
+    "url": "https://www.mongodb.com/docs/manual/data-modeling/",
+    "duration_hours": 10,
+    "teaches": [
+      {
+        "skill_id": "skill_mongodb",
+        "level": 4
+      }
+    ],
+    "prerequisite_ids": [
+      "res_030"
+    ]
+  },
+  {
+    "id": "res_032",
+    "title": "Redis Caching Fundamentals",
+    "type": "course",
+    "url": "https://redis.io/docs/latest/develop/",
+    "duration_hours": 5,
+    "teaches": [
+      {
+        "skill_id": "skill_redis",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": []
+  },
+  {
+    "id": "res_033",
+    "title": "Graph Database Concepts",
+    "type": "course",
+    "url": "https://neo4j.com/docs/getting-started/",
+    "duration_hours": 7,
+    "teaches": [
+      {
+        "skill_id": "skill_neo4j",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": []
+  },
+  {
+    "id": "res_034",
+    "title": "Advanced Graph Modeling",
+    "type": "doc",
+    "url": "https://neo4j.com/docs/getting-started/data-modeling/",
+    "duration_hours": 10,
+    "teaches": [
+      {
+        "skill_id": "skill_neo4j",
+        "level": 4
+      }
+    ],
+    "prerequisite_ids": [
+      "res_033"
+    ]
+  },
+  {
+    "id": "res_035",
+    "title": "AWS Cloud Practitioner Learning",
+    "type": "course",
+    "url": "https://aws.amazon.com/training/digital/",
+    "duration_hours": 8,
+    "teaches": [
+      {
+        "skill_id": "skill_aws",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": []
+  },
+  {
+    "id": "res_036",
+    "title": "AWS Production Architecture",
+    "type": "doc",
+    "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "duration_hours": 12,
+    "teaches": [
+      {
+        "skill_id": "skill_aws",
+        "level": 4
+      }
+    ],
+    "prerequisite_ids": [
+      "res_035"
+    ]
+  },
+  {
+    "id": "res_037",
+    "title": "Azure Cloud Fundamentals",
+    "type": "course",
+    "url": "https://learn.microsoft.com/en-us/training/azure/",
+    "duration_hours": 7,
+    "teaches": [
+      {
+        "skill_id": "skill_azure",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": []
+  },
+  {
+    "id": "res_038",
+    "title": "Docker Container Basics",
+    "type": "course",
+    "url": "https://docs.docker.com/get-started/",
+    "duration_hours": 6,
+    "teaches": [
+      {
+        "skill_id": "skill_docker",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": []
+  },
+  {
+    "id": "res_039",
+    "title": "Docker Production Workflows",
+    "type": "doc",
+    "url": "https://docs.docker.com/build/",
+    "duration_hours": 10,
+    "teaches": [
+      {
+        "skill_id": "skill_docker",
+        "level": 4
+      }
+    ],
+    "prerequisite_ids": [
+      "res_038"
+    ]
+  },
+  {
+    "id": "res_040",
+    "title": "Kubernetes Beginner Guide",
+    "type": "course",
+    "url": "https://kubernetes.io/docs/tutorials/",
+    "duration_hours": 8,
+    "teaches": [
+      {
+        "skill_id": "skill_kubernetes",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": [
+      "res_038"
+    ]
+  },
+  {
+    "id": "res_041",
+    "title": "CI/CD Pipeline Fundamentals",
+    "type": "course",
+    "url": "https://docs.github.com/en/actions",
+    "duration_hours": 6,
+    "teaches": [
+      {
+        "skill_id": "skill_cicd",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": [
+      "res_038"
+    ]
+  },
+  {
+    "id": "res_042",
+    "title": "Terraform Infrastructure Basics",
+    "type": "course",
+    "url": "https://developer.hashicorp.com/terraform/tutorials",
+    "duration_hours": 7,
+    "teaches": [
+      {
+        "skill_id": "skill_terraform",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": [
+      "res_035"
+    ]
+  },
+  {
+    "id": "res_043",
+    "title": "Git Version Control Essentials",
+    "type": "course",
+    "url": "https://git-scm.com/book/en/v2",
+    "duration_hours": 5,
+    "teaches": [
+      {
+        "skill_id": "skill_git",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": []
+  },
+  {
+    "id": "res_044",
+    "title": "Automated Testing Fundamentals",
+    "type": "course",
+    "url": "https://docs.pytest.org/en/stable/getting-started.html",
+    "duration_hours": 6,
+    "teaches": [
+      {
+        "skill_id": "skill_testing",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": [
+      "res_001"
+    ]
+  },
+  {
+    "id": "res_045",
+    "title": "JUnit Testing Guide",
+    "type": "doc",
+    "url": "https://junit.org/junit5/docs/current/user-guide/",
+    "duration_hours": 6,
+    "teaches": [
+      {
+        "skill_id": "skill_junit",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": [
+      "res_004"
+    ]
+  },
+  {
+    "id": "res_046",
+    "title": "Selenium Browser Automation",
+    "type": "course",
+    "url": "https://www.selenium.dev/documentation/",
+    "duration_hours": 7,
+    "teaches": [
+      {
+        "skill_id": "skill_selenium",
+        "level": 2
+      }
+    ],
+    "prerequisite_ids": [
+      "res_006",
+      "res_044"
+    ]
+  },
+  {
+    "id": "res_047",
+    "title": "Effective Code Review Practices",
+    "type": "wiki",
+    "url": "https://google.github.io/eng-practices/review/",
+    "duration_hours": 4,
+    "teaches": [
+      {
+        "skill_id": "skill_code_review",
+        "level": 3
+      }
+    ],
+    "prerequisite_ids": [
+      "res_043"
+    ]
+  },
+  {
+    "id": "res_048",
+    "title": "Payment Systems Architecture",
+    "type": "course",
+    "url": "https://stripe.com/docs",
+    "duration_hours": 8,
+    "teaches": [
+      {
+        "skill_id": "skill_payments",
+        "level": 3
+      }
+    ],
+    "prerequisite_ids": [
+      "res_025"
+    ]
+  },
+  {
+    "id": "res_049",
+    "title": "Healthcare Interoperability with FHIR",
+    "type": "course",
+    "url": "https://www.hl7.org/fhir/",
+    "duration_hours": 8,
+    "teaches": [
+      {
+        "skill_id": "skill_healthcare_hl7",
+        "level": 3
+      }
+    ],
+    "prerequisite_ids": [
+      "res_025"
+    ]
+  },
+  {
+    "id": "res_050",
+    "title": "Telecom OSS and BSS Fundamentals",
+    "type": "doc",
+    "url": "https://www.tmforum.org/",
+    "duration_hours": 6,
+    "teaches": [
+      {
+        "skill_id": "skill_telecom_oss",
+        "level": 3
+      }
+    ],
+    "prerequisite_ids": []
+  }
+]
