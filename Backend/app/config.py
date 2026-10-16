@@ -50,7 +50,14 @@ class Settings(BaseSettings):
 
     @property
     def data_path(self) -> Path:
-        return (BACKEND_DIR / self.data_dir).resolve()
+        p = Path(self.data_dir)
+        if p.is_absolute() and p.exists():
+            return p
+        if (BACKEND_DIR / p).exists():
+            return (BACKEND_DIR / p).resolve()
+        if (BACKEND_DIR.parent / p).exists():
+            return (BACKEND_DIR.parent / p).resolve()
+        return (BACKEND_DIR / p).resolve()
 
 
 settings = Settings()

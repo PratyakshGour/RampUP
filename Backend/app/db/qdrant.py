@@ -4,7 +4,11 @@ from qdrant_client.models import Distance, VectorParams, PointStruct, Filter
 
 from app.config import settings
 
-client = QdrantClient(url=settings.qdrant_url, api_key=settings.qdrant_api_key or None)
+client = QdrantClient(
+    url=settings.qdrant_url,
+    api_key=settings.qdrant_api_key or None,
+    check_compatibility=False,
+)
 COLLECTION = settings.qdrant_collection
 
 
