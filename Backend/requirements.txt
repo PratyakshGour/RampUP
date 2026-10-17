@@ -1,23 +1,9 @@
-# API
-fastapi
-uvicorn[standard]
-python-multipart
-
-# Config and models
-pydantic
-pydantic-settings
-python-dotenv
-
-# Databases
-falkordb
-qdrant-client
-
-# LLM (Groq is OpenAI-compatible)
-openai
-
-# Embeddings
-sentence-transformers
-
-# Ingestion
-python-frontmatter
-tiktoken
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.12
+pydantic>=2.9
+pydantic-settings>=2.6
+falkordb>=1.0
+google-genai>=1.0
+pytest>=8.3
+httpx>=0.27
